@@ -1,0 +1,49 @@
+{
+  "name": "runapi-ai/gpt-image",
+  "description": "RunAPI GPT Image Composer package for PHP applications",
+  "type": "library",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "RunAPI",
+      "email": "contact@runapi.ai"
+    }
+  ],
+  "require": {
+    "php": ">=8.2",
+    "runapi-ai/core": "^0.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "RunApi\\GptImage\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "RunApi\\GptImage\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-main": "0.1.x-dev"
+    }
+  },
+  "minimum-stability": "stable",
+  "homepage": "https://runapi.ai/models/gpt-image",
+  "support": {
+    "source": "https://github.com/runapi-ai/gpt-image-php",
+    "docs": "https://runapi.ai/docs#sdk-gpt-image",
+    "issues": "https://github.com/runapi-ai/gpt-image-php/issues"
+  },
+  "keywords": [
+    "runapi",
+    "runapi-ai",
+    "php",
+    "composer",
+    "sdk",
+    "api",
+    "packagist",
+    "gpt-image",
+    "gpt-image-api"
+  ]
+}
