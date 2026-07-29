@@ -33,7 +33,7 @@
   "homepage": "https://runapi.ai/models/gpt-image",
   "support": {
     "source": "https://github.com/runapi-ai/gpt-image-php",
-    "docs": "https://runapi.ai/docs#sdk-gpt-image",
+    "docs": "https://runapi.ai/docs/resources/sdks",
     "issues": "https://github.com/runapi-ai/gpt-image-php/issues"
   },
   "keywords": [
