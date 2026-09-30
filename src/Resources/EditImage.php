@@ -10,7 +10,6 @@ use RunApi\Core\RequestOptions;
 use RunApi\Core\Resources\TypedConfiguredResource;
 use RunApi\GptImage\Models\CompletedImageTaskResponse;
 use RunApi\GptImage\Models\ImageTaskResponse;
-use RunApi\GptImage\Types;
 
 /**
  * Handles image edit tasks.
@@ -73,10 +72,8 @@ readonly class EditImage extends TypedConfiguredResource
         return new self(
             $http,
             '/api/v1/gpt_image/edit_image',
-            'gpt-image/edit-image',
             ImageTaskResponse::class,
             CompletedImageTaskResponse::class,
-            Types::EDIT_IMAGE_MODELS,
             'edit-image',
             ImageTaskResponse::class,
             CompletedImageTaskResponse::class,

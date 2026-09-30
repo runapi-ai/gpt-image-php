@@ -10,7 +10,6 @@ use RunApi\Core\RequestOptions;
 use RunApi\Core\Resources\TypedConfiguredResource;
 use RunApi\GptImage\Models\CompletedImageTaskResponse;
 use RunApi\GptImage\Models\ImageTaskResponse;
-use RunApi\GptImage\Types;
 
 /**
  * Handles text-to-image generation tasks.
@@ -71,10 +70,8 @@ readonly class TextToImage extends TypedConfiguredResource
         return new self(
             $http,
             '/api/v1/gpt_image/text_to_image',
-            'gpt-image/text-to-image',
             ImageTaskResponse::class,
             CompletedImageTaskResponse::class,
-            Types::TEXT_TO_IMAGE_MODELS,
             'text-to-image',
             ImageTaskResponse::class,
             CompletedImageTaskResponse::class,
